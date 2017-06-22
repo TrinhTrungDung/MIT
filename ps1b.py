@@ -8,6 +8,8 @@
 # Part B: Golden Eggs
 #================================
 
+from ps1a import compare_cow_transport_algorithms
+
 def dp_make_weight(egg_weights, target_weight, memo = {}):
     """
     Find number of eggs to bring back, using the smallest number of eggs. Assumes there is
@@ -50,10 +52,14 @@ def dp_make_weight(egg_weights, target_weight, memo = {}):
 
 # EXAMPLE TESTING CODE, feel free to add more if you'd like
 if __name__ == '__main__':
+    print("Problem 1a: ")
+    compare_cow_transport_algorithms()
+    print("----------------------")
+    print("Problem 1b: ")
     egg_weights = (1, 5, 10, 25)
     n = 99
-    print("Egg weights = (1, 5, 10, 25)")
-    print("n = 99")
+    print("Egg weights = ", egg_weights)
+    print("n = ", n)
     print("Expected ouput: 9 (3 * 25 + 2 * 10 + 4 * 1 = 99)")
     print("Actual output:", dp_make_weight(egg_weights, n))
     print()
