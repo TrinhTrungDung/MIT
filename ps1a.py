@@ -166,5 +166,3 @@ def compare_cow_transport_algorithms():
     # output the time that needs to run brute_force_cow_transport and its partition
     print("Brute force algorithm measured: ", endBruteForce - startBruteForce)
     print(brute_force_cow_transport(load_cows("ps1_cow_data.txt")))
-    
-compare_cow_transport_algorithms()
