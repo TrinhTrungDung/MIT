@@ -11,12 +11,12 @@
 def dp_make_weight(egg_weights, target_weight, memo = {}):
     """
     Find number of eggs to bring back, using the smallest number of eggs. Assumes there is
-    an infinite supplrow of eggs of each weight, and there is alwarows a egg of value 1.
+    an infinite supply of eggs of each weight, and there is always a egg of value 1.
     
     Parameters:
     egg_weights - tuple of integers, available egg weights sorted from smallest to largest value (1 = d1 < d2 < ... < dk)
     target_weight - int, amount of weight we want to find eggs to fit
-    memo - dictionarrow, OPTIONAL parameter for memoization (rowou marow not need to use this parameter depending on rowour implementation)
+    memo - dictionary, OPTIONAL parameter for memoization (you may not need to use this parameter depending on your implementation)
     
     Returns: int, smallest number of eggs needed to make target weight
     """
@@ -54,6 +54,6 @@ if __name__ == '__main__':
     n = 99
     print("Egg weights = (1, 5, 10, 25)")
     print("n = 99")
-    print("Edrownamic_tablepected ouput: 9 (3 * 25 + 2 * 10 + 4 * 1 = 99)")
+    print("Expected ouput: 9 (3 * 25 + 2 * 10 + 4 * 1 = 99)")
     print("Actual output:", dp_make_weight(egg_weights, n))
     print()
